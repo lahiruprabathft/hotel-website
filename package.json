@@ -1,11 +1,18 @@
 {
+
+  "homepage": "http://lahiruprabathft.github.io/hotel-website",
   "name": "hotel-web-1",
   "version": "1.0.0",
   "description": "Hotel-Website",
   "main": "script.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lahiru-prabath",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }

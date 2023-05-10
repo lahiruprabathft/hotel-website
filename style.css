@@ -1,0 +1,603 @@
+
+
+  /* other styles */
+  /* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: #3f4693; /* Change to desired background color */
+  }
+  
+  /* Style the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #4a1a1a; /* Change to desired thumb color */
+    border-radius: 10px; /* Change to desired thumb border radius */
+  }
+  
+  /* Style the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0; /* Change to desired thumb hover color */
+  }
+  
+  /* Style the scrollbar corner */
+  ::-webkit-scrollbar-corner {
+    background-color: #f5f5f5; /* Change to desired corner color */
+  }
+  
+  /* Style the scrollbar track on scrollbar hover */
+  ::-webkit-scrollbar-track:hover {
+    background-color: #e0e0e0; /* Change to desired track hover color */
+  }
+  
+  h1{
+    font-size: 10vh;
+    color: #000000;
+    background-color: #e3e3e3a4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+
+  h2{
+    text-align: center;
+  }
+
+ 
+  table {
+    margin-top: 10px; /* Example margin between room description and table */
+    width: 100%; /* Example width to span the entire width of the room model box */
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2); /* Example shadow effect for table */
+  }
+  
+
+  
+  /* Hero Section */
+    /* Set position property on hero section wrapper to enable absolute positioning */
+.hero-section-wrapper {
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent background image from overflowing */
+  }
+  
+  /* Add transition property to hero section for smooth background image transition */
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Set initial opacity to 1 for fade-in effect */
+    transition: opacity 0.5s ease-in-out; /* Add transition property for smooth opacity transition */
+  }
+      
+          #hero-carousel .carousel-inner {
+            height: 100%;
+          }
+      
+          #hero-carousel .carousel-item img {
+            object-fit: cover;
+            height: 100vh;
+            width: 100% !important;
+          }
+      
+          .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+      
+          /* Menu */
+        .navbar {
+        background-color: transparent;
+        transition: background-color 0.5s ease-in-out; /* Add transition effect for smooth color change */
+        background-color: #0056b3;
+      }
+      
+      /* Add a class to navbar when scrolling beyond 100vh */
+      .navbar.scrolled {
+        background-color: #160a499b !important; /* Change to desired background color */
+      }
+      
+          .nav-link {
+            color: #ffffff !important;
+            margin-right: 1rem;
+            transition: color 0.3s ease-in-out;
+          }
+      
+          .nav-link:hover {
+            color: #ffc107 !important;
+          }
+      
+          /* About Us Section */
+          .about-section {
+            padding: 5rem 0;
+          }
+      
+          .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+          }
+      
+          .about-section p {
+            font-size: 1.2rem;
+          }
+      
+
+          .navbar-brand{
+
+      background-color: #fff;
+          }
+
+          /* Services Section */
+        /* CSS Styles */
+/* CSS Styles */
+.services-wrapper {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    overflow: hidden !important;
+    /* overflow: visible; */
+    white-space: nowrap !important; /* Prevent line breaks to keep services in a single row */
+    text-align: center; /* Center align services within the wrapper */
+  }
+  .services {
+    display: inline-block; /* Display services as inline-block for horizontal layout */
+    transition: transform 0.5s ease-in-out; /* Add transition effect for smooth scrolling */
+  }
+  
+  .service {
+    width: 450px; /* Update service width to 450px */
+    height: 600px;
+    flex-shrink: 0;
+    padding: 16px;
+    background-color: #f0f0f0;
+    margin-right: 16px;
+    flex: 0 0 33.333%;
+  }
+  
+  
+.service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .service-details {
+    padding: 20px;
+  }
+  
+  .service-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .service-description {
+    font-size: 14px;
+    height: 80px;
+    margin-bottom: 10px;
+    white-space: normal; /* This will make the text wrap within the div */
+  }
+  
+  .service-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .service-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-button i {
+    margin-right: 5px;
+  }
+
+    .buttons-wrapper{
+   
+    background-color: #84aabd;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .back-button,
+  .next-button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    outline: none;
+  }
+  
+  .back-button:hover,
+  .next-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+     
+
+
+
+          /* Rooms Section */
+ /* Reset some default styles */
+
+/* Room section styles */
+
+.rooms-section{
+width: 100%;
+margin: 10px 0;
+
+
+}
+
+.room {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  height: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  text-align: center;
+  float: left;
+}
+
+.room h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.room img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.room p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.room .see-more {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Popup styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  width: 50%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 16px;
+}
+
+.modal-content table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.modal-content table td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-content .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* room feature */
+.room-features-table {
+  /* Add your styles for the room features table here */
+  margin-top: 10px; /* Example margin between room description and table */
+  width: 100%; /* Example width to span the entire width of the room model box */
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); /* Example shadow effect for table */
+}
+
+.room-features-table th {
+  width: 20%;
+  padding: 8px; 
+  font-size: 12px;
+  border: 1px solid #ddd; 
+}
+
+.room-features-table td {
+  font-size: 12px;
+  padding: 8px; 
+  border: 1px solid #ddd; 
+}
+
+
+/* locations Section */
+#loc{
+  width: 100%;
+  height: auto;
+  background-color: #007bff;
+ margin: 10px 0;
+}
+
+.location-gallery-section {
+  padding: 10px 0;
+}
+
+.location-gallery-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.location-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.location img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.location:hover img {
+  transform: scale(1.1);
+}
+
+.location .location-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location:hover .location-overlay {
+  opacity: 1;
+}
+
+.location-overlay-text {
+  color: #fff;
+  text-align: center;
+}
+
+
+
+          /* Contact Us Section */
+          .contact-section {
+            padding: 5rem 0;
+          }
+      
+             .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+          }
+      
+          .contact-section .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+          }
+      
+          .contact-section .form-group label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+      
+          .contact-section .form-group input,
+          .contact-section .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+          }
+      
+          .contact-section .form-group button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+          }
+      
+          .contact-section .form-group button:hover {
+            background-color: #ffca2c;
+          }
+      
+          /* Footer */
+          .footer {
+            padding: 2rem;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+          }
+      
+          .footer p {
+            margin-bottom: 0;
+          }
+      
+          /* Media Queries */
+          @media (max-width: 768px) {
+            .hero-content {
+              width: 90%;
+            }
+      
+            .about-section {
+              text-align: center;
+            }
+      
+            .about-section img {
+              margin-top: 2rem;
+            }
+          }
+
+
+/* Booking PAGE design CSS ................................................................ */
+
+main{
+  width: 100%; 
+  /* height: 100vh;  */
+  background-color: rgb(248, 241, 233); 
+  padding: 1rem; 
+  margin-top: 3rem; 
+  
+}
+
+
+
+/* Reset some default form styles */
+form {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Style the form as a voucher */
+#booking-form {
+  width: 400px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* Style the form heading */
+#booking-form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Style the form sections */
+#booking-form h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Style the form labels and inputs */
+#booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#booking-form input,
+#booking-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Style the form button */
+#booking-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add background and border styles to form sections */
+#booking-form h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 5px;
+}
+
+/* Add a paper-like background */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Add hover effect to form button */
+#booking-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}

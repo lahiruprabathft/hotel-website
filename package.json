@@ -6,8 +6,7 @@
   "description": "Hotel-Website",
   "main": "script.js",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy": "git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lahiru-prabath",

@@ -128,12 +128,61 @@
       background-color: #fff;
           }
 
+          /* Mobile responsive styles for hero section */
+@media (max-width: 767px) {
+  .hero-section {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    
+  }
+  h1{
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  h3{
+    font-size: 18px;
+    background-color: #ced4daa5;
+  }
+  
+  #hero-carousel .carousel-inner {
+    height: 50%;
+  }
+  
+  #hero-carousel .carousel-item img {
+    height: 100%;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  p{
+    text-align:justify;
+  }
+
+
+}
           /* Services Section */
+
+
         /* CSS Styles */
 /* CSS Styles */
 .services-wrapper {
     width: 100%;
-    padding: 60px;
+    /* padding: 60px; */
     display: flex;
     overflow: hidden !important;
     /* overflow: visible; */
@@ -230,7 +279,65 @@
   }
      
 
+  @media (max-width: 767px) {
 
+
+    .services-wrapper {
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .service {
+      width: 100% !important;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .service-image img {
+       /* width: 100% !important; */
+       width: 450px;
+      height: auto !important;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    
+    .service-details {
+      width: 100% !important;
+    }
+    
+    .service-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .service-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .service-button {
+      display: inline-block;
+      margin-top: 140px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .service-button:hover {
+      background-color: #0056b3;
+    }
+    
+  }
 
           /* Rooms Section */
  /* Reset some default styles */
@@ -281,6 +388,25 @@ margin: 10px 0;
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .room {
+    width: 100%; /* Change room width to 100% for full width on mobile */
+    margin: 0 0 20px 0; /* Remove left and right margin and add some bottom margin */
+    padding: 20px; /* Reduce padding */
+    margin-top: 50px;
+    height: auto; /* Remove fixed height */
+  }
+
+  .room h3 {
+    margin: 20px 0; /* Reduce margin */
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .room img {
+    max-height: 200px; /* Reduce max-height */
+  }
 }
 
 /* Modal Popup styles */
@@ -352,6 +478,42 @@ margin: 10px 0;
   cursor: pointer;
 }
 
+@media only screen and (max-width: 767px) {
+  .modal-content {
+    margin: 10% auto;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .modal-content h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content img {
+    max-height: 300px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content p {
+    font-size: 14px;
+  }
+  
+  .modal-content table td {
+    padding: 2px;
+    font-size: 12px;
+  }
+  
+  .modal-content .btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .modal-content .close {
+    font-size: 20px;
+  }
+}
 
 /* room feature */
 .room-features-table {
@@ -373,6 +535,30 @@ margin: 10px 0;
   font-size: 12px;
   padding: 8px; 
   border: 1px solid #ddd; 
+}
+
+@media only screen and (max-width: 767px) {
+  .room-features-table {
+    font-size: 14px;
+  }
+  
+  .room-features-table th, .room-features-table td {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  
+  .room-features-table th {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .room-features-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+  }
 }
 
 
@@ -499,17 +685,7 @@ margin: 10px 0;
       
           /* Media Queries */
           @media (max-width: 768px) {
-            .hero-content {
-              width: 90%;
-            }
-      
-            .about-section {
-              text-align: center;
-            }
-      
-            .about-section img {
-              margin-top: 2rem;
-            }
+         
           }
 
 
